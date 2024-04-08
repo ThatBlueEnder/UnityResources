@@ -1,0 +1,58 @@
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    /*the background color of chrome's pdf viewer*/
+    background: #525659
+}
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.header > * {
+    /*w3 schools iscc-nbs black*/
+    background: #222222;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.material-symbols-outlined,
+.header > * > * {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Google Sans Text";
+    /*w3 schools iscc-nbs white*/
+    color: #f2f3f4;
+}
+/*W3 Schools ISCC-NBS deep variant*/
+.purple {
+    background: #602f6b;
+}
+.brown {
+    background: #593319;
+}
+.red {
+    background: #841b2d;
+}
+.ninja {
+    height: 67%;
+}
+.sensei {
+    height: 33%;
+    background: #00000080;
+}
+.material-symbols-outlined {
+    flex-grow: 0;
+    flex-basis: auto;
+    width: 50px;
+}
+#viewer{
+    border: none;
+    height: calc(100% - 50px);
+    width: 100%
+}

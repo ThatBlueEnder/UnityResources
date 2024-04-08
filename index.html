@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Unity Resources</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.addEventListener("keydown", function(e) {
+        if (e.ctrlKey && (e.keyCode == "61" || e.keyCode == "107" || e.keyCode == "173" || e.keyCode == "109" || e.keyCode == "187" || e.keyCode == "189")) {
+          e.preventDefault();
+        }
+      });
+      document.addEventListener("wheel", function(e) {
+        if (e.ctrlKey) {
+          e.preventDefault();
+        }
+      }, {
+        passive: false
+      });
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Text&family=Material+Symbols+Outlined" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="purple">
+        <div class="ninja" onclick="document.getElementById('viewer').src='PurpleNinja.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0&view=FitH'"> Purple Belt <br /> Ninja Guide </div>
+        <div class="sensei" onclick="document.getElementById('viewer').src='PurpleSensei.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0&view=FitH'"> Sensei Guide </div>
+      </div>
+      <div class="brown">
+        <div class="ninja" onclick="document.getElementById('viewer').src='BrownNinja.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0&view=FitH'"> Brown Belt <br /> Ninja Guide </div>
+        <div class="sensei" onclick="document.getElementById('viewer').src='BrownSensei.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0&view=FitH'"> Sensei Guide </div>
+      </div>
+      <div class="red">
+        <div class="ninja" onclick="document.getElementById('viewer').src='RedNinja.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0&view=FitH'"> Red Belt <br /> Ninja Guide </div>
+        <div class="sensei" onclick="document.getElementById('viewer').src='RedSensei.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0&view=FitH'"> Sensei Guide </div>
+      </div>
+      <div onclick="document.getElementById('viewer').src='Install.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0&view=FitH'" class="install material-symbols-outlined"> &#xf090 </div>
+      <div onclick="document.getElementById('viewer').src='Transition.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0&view=FitH'" class="transition material-symbols-outlined"> &#xe88e </div>
+    </div>
+    <iframe id="viewer" src="PurpleNinja.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0&view=FitH"></iframe>
+  </body>
+</html>
