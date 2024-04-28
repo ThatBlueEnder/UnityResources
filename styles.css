@@ -40,7 +40,7 @@ html, body {
     background: #841b2d;
 }
 .ninja {
-    height: 67%;
+    height: /*67%*/ 100%;
 }
 .sensei {
     height: 33%;
